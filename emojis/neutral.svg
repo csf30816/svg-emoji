@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="517px" height="516px" viewBox="100 105 160.111 159.954" preserveAspectRatio="xMidYMid meet" >
-	<rect id="svgEditorBackground" x="100" y="105" width="160.111328125" height="159.9539337158203" style="stroke: none; fill: none;"/>
+  	<rect id="svgEditorBackground" x="100" y="105" width="160.111328125" height="159.9539337158203" style="stroke: none; fill: none;"/>
 	<circle id="e1_circle" cx="180" cy="185" style="stroke-width: 6px; fill: rgb(255, 255, 0); stroke: rgb(155, 155, 0);" r="76.4853"/>
 	<circle id="e15_circle" cx="150" cy="160" style="stroke: none; stroke-width: 6px;" r="12.2962" fill="black"/>
 	<path d="M141,198" stroke="black" stroke-width="1" id="e93_path" style="fill: none;"/>
 	<path d="M142,191" stroke="black" stroke-width="1" id="e122_path" style="fill: none;"/>
-	<path d="M149,206q0,0,60,0" stroke="black" id="e169_arc2" style="fill: none; stroke-width: 10px;"/>
+	<path d="M149,206q0,0,62,0" stroke="black" id="e169_arc2" style="fill: none; stroke-width: 10px;"/>
 	<circle id="e268_circle" cx="210" cy="160" style="stroke: none; stroke-width: 6px;" r="12.2962" fill="black"/>
 	<path d="M116.97286456499911,156.45806807880248a74.169327,74.169327,0,0,1,35.02868489701619,-35.648661620857126" stroke="#FFFFCB" id="e29_circleArc" style="fill: none; stroke-width: 3px;"/>
 </svg>
