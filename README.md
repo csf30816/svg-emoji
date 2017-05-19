@@ -1,1 +1,1 @@
-# svg-emoji
+# SVG Emoji
