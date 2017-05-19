@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="517px" height="516px" viewBox="100 105 160.111 159.954" preserveAspectRatio="xMidYMid meet" >
+	<rect id="svgEditorBackground" x="100" y="105" width="160.111328125" height="159.9539337158203" style="stroke: none; fill: none;"/>
+	<circle id="e1_circle" cx="180" cy="185" style="stroke-width: 6px; fill: rgb(255, 255, 0); stroke: rgb(155, 155, 0);" r="76.4853"/>
+	<circle id="e15_circle" cx="150" cy="160" style="stroke: none; stroke-width: 6px;" r="12.2962" fill="black"/>
+	<path d="M141,198" stroke="black" stroke-width="1" id="e93_path" style="fill: none;"/>
+	<path d="M142,191" stroke="black" stroke-width="1" id="e122_path" style="fill: none;"/>
+	<path d="M158.8847974284311,209.2949324761437q39.5852581124181,12.027641039216007,53.41013504771263,-17.97235896078388" stroke="black" id="e169_arc2" style="fill: none; stroke-width: 10px;"/>
+	<circle id="e268_circle" cx="209.70045471191406" cy="167.48861694335938" style="stroke: none; stroke-width: 6px;" r="12.2962" fill="black" transform="matrix(1.08847 0 0 1 -18.1031 0)"/>
+	<path d="M116.97286456499911,156.45806807880248a74.169327,74.169327,0,0,1,35.02868489701619,-35.648661620857126" stroke="#FFFFCB" id="e29_circleArc" style="fill: none; stroke-width: 3px;"/>
+	<circle id="e12_circle" cx="209.99995422363284" cy="175.276611328125" style="stroke: none; stroke-width: 6px;" r="12.2962" fill="yellow"/>
+	<path d="M201.7720966267675,146.93550424182902a43.206554,43.206554,0,0,1,28.15669570522803,11.382494008496451" stroke="#A16C3F" id="e131_circleArc" style="fill: none; stroke-width: 2px;"/>
+	<path d="M118.1657278303451,138.84794270947629a26.121056164558873,26.121056164558873,0,0,1,27.557617073201897,10.783415376470344" stroke="#A16C3F" id="e147_circleArc" style="fill: none; stroke-width: 2px;" transform="matrix(-0.919643 0 0 1 264.854 0)"/>
+</svg>
