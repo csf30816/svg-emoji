@@ -6,9 +6,9 @@
 	</head>
 	<body>
 		<script>
-			var html = document.getElementsByTagName("html")[0].innerHTML;
-			html.replace(":)", "<img src=\"https://csf30816.github.io/svg-emoji/emojis/smile.svg\">");
-			document.getElementsByTagName("html").innerHTML = html;
+			$(document).ready(function() {
+  				body.innerHtml = body.innerHtml.replace(':)', ''<img src="https://csf30816.github.io/svg-emoji/emojis/smile.svg">'');
+			});
 		</script>
 		<h1>:) Test</h1>
 	</body>
