@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="517px" height="516px" viewBox="100 105 160.111 159.954" preserveAspectRatio="xMidYMid meet" >
+	<defs id="svgEditorDefs">
+		<path id="svgEditorClosePathDefs" fill="black" style="stroke-width: 0px; stroke: none;"/>
+	</defs>
+	<rect id="svgEditorBackground" x="100" y="105" width="160.111328125" height="159.9539337158203" style="stroke: none; fill: none;"/>
+	<circle id="e1_circle" cx="180" cy="185" style="stroke-width: 6px; fill: rgb(255, 255, 0); stroke: rgb(155, 155, 0);" r="76.4853"/>
+	<circle id="e15_circle" cx="150" cy="160" style="stroke: none; stroke-width: 6px;" r="12.2962" fill="black"/>
+	<path d="M141,198" stroke="black" stroke-width="1" id="e93_path" style="fill: none;"/>
+	<path d="M142,191" stroke="black" stroke-width="1" id="e122_path" style="fill: none;"/>
+	<path d="M149,206q0,0,62,0" stroke="black" id="e169_arc2" style="fill: none; stroke-width: 10px;"/>
+	<circle id="e268_circle" cx="210" cy="160" style="stroke: none; stroke-width: 6px;" r="12.2962" fill="black"/>
+	<path d="M116.97286456499911,156.45806807880248a74.169327,74.169327,0,0,1,35.02868489701619,-35.648661620857126" stroke="#FFFFCB" id="e29_circleArc" style="fill: none; stroke-width: 3px;"/>
+	<path d="M149.6522537117147,210.43783886513012c-2.640486515269089,-11.756952935425375,61.0186187630091,-11.614329830315967,58.41016387939453,0c-2.60845488361457,11.614329830315967,-17.68961363018488,23.729199634149495,-28.45623779296875,23.364059448242188c-10.482897776022213,0.23393844611891268,-27.313439571156692,-11.607106512816813,-29.95392608642578,-23.364059448242188Z" id="e129_area3" fill="black" style="stroke-width: 0px; stroke: none;" transform="matrix(1.05573 0 0 1 -8.77005 1.4977)"/>
+	<rect x="155.643" y="204.148" id="e325_rectangle" style="stroke-width: 1px; stroke: none;" width="47.9263" height="5.99079" fill="white" transform="matrix(1.16865 0 0 1.1 -29.9911 -21.4631)"/>
+</svg>
