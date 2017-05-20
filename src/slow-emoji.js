@@ -1,5 +1,5 @@
 window.onload = function () {
-	setInterval(function () {
+	// setInterval(function () {
 		function replaceTextByImage(pattern, src) {
 			document.body.innerHTML = document.body.innerHTML.replace(new RegExp(pattern, 'g'), '<span style="background-size: 100% 100%; background-image: url(\'' + src + '\');">&nbsp&nbsp&nbsp&nbsp</span>');
 		}
@@ -84,5 +84,5 @@ window.onload = function () {
 		replaceTextByImage(':thumbs-down:', 'https://csf30816.github.io/svg-emoji/emojis/thumbs-down.svg');
 		replaceTextByImage(':down:', 'https://csf30816.github.io/svg-emoji/emojis/thumbs-down.svg');
 		replaceTextByImage('👎', 'https://csf30816.github.io/svg-emoji/emojis/thumbs-down.svg');
-	}, 1000);
+	// }, 1000);
 };
