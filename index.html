@@ -5,13 +5,23 @@
         <title>SVG Emoji</title>
     </head>
     <body>
-        <h1>:) Test</h1>
+        :)
+        :D
+        :P
+        :(
+        xD
+        ;)
         <script>
-        var html = document.getElementsByTagName("html")[0].innerHTML;
-        html = html.replace(":)", "<img class='emoji' src='https://csf30816.github.io/svg-emoji/emojis/smile.svg'>");
-        document.getElementsByTagName("html")[0].innerHTML = html;
-        
-        $(".emoji").css({"height":"20px"});
+            var html = document.getElementsByTagName("html")[0].innerHTML;
+            html = html.replace(":)", "<img class='emoji' src='https://csf30816.github.io/svg-emoji/emojis/smile.svg'>");
+            html = html.replace(":D", "<img class='emoji' src='https://csf30816.github.io/svg-emoji/emojis/big-smile.svg'>");
+            html = html.replace(";)", "<img class='emoji' src='https://csf30816.github.io/svg-emoji/emojis/wink.svg'>");
+            html = html.replace(":P", "<img class='emoji' src='https://csf30816.github.io/svg-emoji/emojis/tongue.svg'>");
+            html = html.replace(":(", "<img class='emoji' src='https://csf30816.github.io/svg-emoji/emojis/frown.svg'>");
+            html = html.replace("xD", "<img class='emoji' src='https://csf30816.github.io/svg-emoji/emojis/dead.svg'>");
+            document.getElementsByTagName("html")[0].innerHTML = html;
+            
+            $(".emoji").css({"height":"20px"});
         </script>
     </body>
 </html>
