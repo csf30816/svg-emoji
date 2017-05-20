@@ -11,6 +11,7 @@
 		:(
 		xO
 		;)
+		:cry:
 		<script>
 			function replaceTextByImage(pattern, src) {
 			document.body.innerHTML = document.body.innerHTML.replace(new RegExp(pattern, 'g'), '<span style="background-size: 100% 100%; background-image: url(\'' + src + '\');">&nbsp&nbsp&nbsp&nbsp</span>');
@@ -22,6 +23,8 @@
 			replaceTextByImage(':\\(', 'https://csf30816.github.io/svg-emoji/emojis/frown.svg');
 			replaceTextByImage(';\\)', 'https://csf30816.github.io/svg-emoji/emojis/wink.svg');
 			replaceTextByImage('xO', 'https://csf30816.github.io/svg-emoji/emojis/dead.svg');
+			replaceTextByImage(':crying:', 'https://csf30816.github.io/svg-emoji/emojis/cry.svg');
+			replaceTextByImage(':cry:', 'https://csf30816.github.io/svg-emoji/emojis/cry.svg');
 		</script>
 	</body>
 </html>
