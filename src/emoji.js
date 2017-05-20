@@ -20,4 +20,6 @@ window.onload = function () {
 	replaceTextByImage('D:', 'https://csf30816.github.io/svg-emoji/emojis/big-frown.svg');
 	replaceTextByImage(':big-frown:', 'https://csf30816.github.io/svg-emoji/emojis/big-frown.svg');
 	replaceTextByImage(':heart-eyes:', 'https://csf30816.github.io/svg-emoji/emojis/heart-eyes.svg');
+	replaceTextByImage(':neutral:', 'https://csf30816.github.io/svg-emoji/emojis/neutral.svg');
+	replaceTextByImage(':|', 'https://csf30816.github.io/svg-emoji/emojis/neutral.svg');
 };
