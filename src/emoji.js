@@ -26,4 +26,6 @@ window.onload = function () {
 	replaceTextByImage(':plain:', 'https://csf30816.github.io/svg-emoji/emojis/neutral.svg');
 	replaceTextByImage(':raging:', 'https://csf30816.github.io/svg-emoji/emojis/raging.svg');
 	replaceTextByImage(':angry-red:', 'https://csf30816.github.io/svg-emoji/emojis/raging.svg');
+	replaceTextByImage(':angry:', 'https://csf30816.github.io/svg-emoji/emojis/mad.svg');
+	replaceTextByImage(':mad:', 'https://csf30816.github.io/svg-emoji/emojis/mad.svg');
 };
