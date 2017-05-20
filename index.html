@@ -3,33 +3,6 @@
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <title>SVG Emoji</title>
-        <style>
-            .emoji-smile {
-                background-size: 100% 100%;
-                background-image: url('https://csf30816.github.io/svg-emoji/emojis/smile.svg');
-                background-repeat: no-repeat;
-            }
-            .emoji-tongue {
-                background-size: 100% 100%;
-                background-image: url('https://csf30816.github.io/svg-emoji/emojis/tongue.svg');
-                background-repeat: no-repeat;
-            }
-            .emoji-frown {
-                background-size: 100% 100%;
-                background-image: url('https://csf30816.github.io/svg-emoji/emojis/frown.svg');
-                background-repeat: no-repeat;
-            }
-            .emoji-big-smile {
-                background-size: 100% 100%;
-                background-image: url('https://csf30816.github.io/svg-emoji/emojis/big-smile.svg');
-                background-repeat: no-repeat;
-            }
-            .emoji-dead {
-                background-size: 100% 100%;
-                background-image: url('https://csf30816.github.io/svg-emoji/emojis/dead.svg');
-                background-repeat: no-repeat;
-            }
-        </style>
     </head>
     <body>
         :)
@@ -39,10 +12,16 @@
         xD
         ;)
         <script>
-            $(document).ready(function() {
-                document.body.innerHTML = document.body.innerHTML.replace(/:\)/g, '<span class="emoji-smile" src="https://csf30816.github.io/svg-emoji/emojis/smile.svg">&nbsp&nbsp&nbsp&nbsp</span>');
-                document.body.innerHTML = document.body.innerHTML.replace(/:\)/g, '<span class="emoji-tongue" src="https://csf30816.github.io/svg-emoji/emojis/smile.svg">&nbsp&nbsp&nbsp&nbsp</span>');
-            });
+            function replaceTextByImage(text, src) {
+                document.body.innerHTML = document.body.innerHTML.replace(/:\)/g, '<span style="background-size: 100% 100%; background-image: url(\'' + src + '\');">&nbsp&nbsp&nbsp&nbsp</span>');
+            }
+            replaceTextByImage(':)', 'https://csf30816.github.io/svg-emoji/emojis/smile.svg');
+            replaceTextByImage(':D', 'https://csf30816.github.io/svg-emoji/emojis/big-smile.svg');
+            replaceTextByImage(':P', 'https://csf30816.github.io/svg-emoji/emojis/tongue.svg');
+            replaceTextByImage(':(', 'https://csf30816.github.io/svg-emoji/emojis/frown.svg');
+            replaceTextByImage('xD', 'https://csf30816.github.io/svg-emoji/emojis/dead.svg');
+            replaceTextByImage('xO', 'https://csf30816.github.io/svg-emoji/emojis/dead.svg');
+            replaceTextByImage(';)', 'https://csf30816.github.io/svg-emoji/emojis/wink.svg');
         </script>
     </body>
 </html>
