@@ -1,11 +1,8 @@
 window.onload = function () {
-	document.getElementsByTagName('body').addEventListener('change', function() {
-		function replaceTextByImage(pattern, src) {
-			document.body.innerHTML = document.body.innerHTML.replace(new RegExp(pattern, 'g'), '<span style="background-size: 100% 100%; background-image: url(\'' + src + '\');">&nbsp&nbsp&nbsp&nbsp</span>');
-		}
-		
-		console.log("Repeating Emoji Convert");
-
+	function replaceTextByImage(pattern, src) {
+		document.body.innerHTML = document.body.innerHTML.replace(new RegExp(pattern, 'g'), '<span style="background-size: 100% 100%; background-image: url(\'' + src + '\');">&nbsp&nbsp&nbsp&nbsp</span>');
+	}
+	function replace() {
 		// Smile 🙂
 		replaceTextByImage(':\\)', 'https://csf30816.github.io/svg-emoji/emojis/smile.svg');
 		replaceTextByImage(':smile:', 'https://csf30816.github.io/svg-emoji/emojis/smile.svg');
@@ -84,5 +81,9 @@ window.onload = function () {
 		replaceTextByImage(':thumbs-down:', 'https://csf30816.github.io/svg-emoji/emojis/thumbs-down.svg');
 		replaceTextByImage(':down:', 'https://csf30816.github.io/svg-emoji/emojis/thumbs-down.svg');
 		replaceTextByImage('👎', 'https://csf30816.github.io/svg-emoji/emojis/thumbs-down.svg');
+	}
+	replace();
+	document.getElementsByTagName('body').addEventListener('change', function() {
+		replace();
 	});
 };
