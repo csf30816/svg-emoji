@@ -10,10 +10,8 @@
         var html = document.getElementsByTagName("html")[0].innerHTML;
         html = html.replace(":)", "<img class='emoji' src='https://csf30816.github.io/svg-emoji/emojis/smile.svg'>");
         document.getElementsByTagName("html")[0].innerHTML = html;
-            
-        var parent = $(".emoji").parent();
-        var lh = $(parent).css("line-height");
-        $(".emoji").css({"height":lh});
+        
+        $(".emoji").css({"height":"20px"});
         </script>
     </body>
 </html>
