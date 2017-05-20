@@ -3,6 +3,8 @@ window.onload = function () {
 		function replaceTextByImage(pattern, src) {
 			document.body.innerHTML = document.body.innerHTML.replace(new RegExp(pattern, 'g'), '<span style="background-size: 100% 100%; background-image: url(\'' + src + '\');">&nbsp&nbsp&nbsp&nbsp</span>');
 		}
+		
+		console.log("Repeating Emoji Convert");
 
 		// Smile 🙂
 		replaceTextByImage(':\\)', 'https://csf30816.github.io/svg-emoji/emojis/smile.svg');
