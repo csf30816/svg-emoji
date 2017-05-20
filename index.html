@@ -3,6 +3,13 @@
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <title>SVG Emoji</title>
+        <style>
+            .emoji {
+                background-size: 100% 100%;
+                background-image: url('https://csf30816.github.io/svg-emoji/emojis/smile.svg');
+                background-repeat: no-repeat;
+            }
+        </style>
     </head>
     <body>
         :)
@@ -12,16 +19,9 @@
         xD
         ;)
         <script>
-            var html = document.getElementsByTagName("html")[0].innerHTML;
-            html = html.replace(":)", "<img class='emoji' src='https://csf30816.github.io/svg-emoji/emojis/smile.svg'>");
-            html = html.replace(":D", "<img class='emoji' src='https://csf30816.github.io/svg-emoji/emojis/big-smile.svg'>");
-            html = html.replace(";)", "<img class='emoji' src='https://csf30816.github.io/svg-emoji/emojis/wink.svg'>");
-            html = html.replace(":P", "<img class='emoji' src='https://csf30816.github.io/svg-emoji/emojis/tongue.svg'>");
-            html = html.replace(":(", "<img class='emoji' src='https://csf30816.github.io/svg-emoji/emojis/frown.svg'>");
-            html = html.replace("xD", "<img class='emoji' src='https://csf30816.github.io/svg-emoji/emojis/dead.svg'>");
-            document.getElementsByTagName("html")[0].innerHTML = html;
-            
-            $(".emoji").css({"height":"20px"});
+            $(document).ready(function() {
+                document.body.innerHTML = document.body.innerHTML.replace(/:\)/g, '<span class="emoji" src="https://csf30816.github.io/svg-emoji/emojis/smile.svg">&nbsp&nbsp&nbsp&nbsp</span>');
+            });
         </script>
     </body>
 </html>
