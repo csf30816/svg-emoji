@@ -83,7 +83,7 @@ window.onload = function () {
 		replaceTextByImage('👎', 'https://csf30816.github.io/svg-emoji/emojis/thumbs-down.svg');
 	}
 	replace();
-	document.getElementsByTagName('body').addEventListener('change', function() {
+	document.getElementsByTagName('body')[0].onchange = function(){
 		replace();
-	});
+	};
 };
