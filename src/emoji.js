@@ -55,4 +55,12 @@ window.onload = function () {
 	// Teeth
 	replaceTextByImage(':teeth:', 'https://csf30816.github.io/svg-emoji/emojis/teeth.svg');
 	replaceTextByImage(':wide-smile:', 'https://csf30816.github.io/svg-emoji/emojis/teeth.svg');
+	
+	// Thumbs Up
+	replaceTextByImage(':thumbs-up:', 'https://csf30816.github.io/svg-emoji/emojis/thumbs-up.svg');
+	replaceTextByImage(':up:', 'https://csf30816.github.io/svg-emoji/emojis/thumbs-up.svg');
+	
+	// Thumbs Down
+	replaceTextByImage(':thumbs-down:', 'https://csf30816.github.io/svg-emoji/emojis/thumbs-down.svg');
+	replaceTextByImage(':down:', 'https://csf30816.github.io/svg-emoji/emojis/thumbs-down.svg');
 };
