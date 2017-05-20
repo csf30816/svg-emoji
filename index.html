@@ -4,9 +4,19 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <title>SVG Emoji</title>
         <style>
-            .emoji {
+            .emoji-smile {
                 background-size: 100% 100%;
                 background-image: url('https://csf30816.github.io/svg-emoji/emojis/smile.svg');
+                background-repeat: no-repeat;
+            }
+            .emoji-tongue {
+                background-size: 100% 100%;
+                background-image: url('https://csf30816.github.io/svg-emoji/emojis/tongue.svg');
+                background-repeat: no-repeat;
+            }
+            .emoji-frown {
+                background-size: 100% 100%;
+                background-image: url('https://csf30816.github.io/svg-emoji/emojis/frown.svg');
                 background-repeat: no-repeat;
             }
         </style>
@@ -20,7 +30,8 @@
         ;)
         <script>
             $(document).ready(function() {
-                document.body.innerHTML = document.body.innerHTML.replace(/:\)/g, '<span class="emoji" src="https://csf30816.github.io/svg-emoji/emojis/smile.svg">&nbsp&nbsp&nbsp&nbsp</span>');
+                document.body.innerHTML = document.body.innerHTML.replace(/:\)/g, '<span class="emoji-smile" src="https://csf30816.github.io/svg-emoji/emojis/smile.svg">&nbsp&nbsp&nbsp&nbsp</span>');
+                document.body.innerHTML = document.body.innerHTML.replace(/:\)/g, '<span class="emoji-tongue" src="https://csf30816.github.io/svg-emoji/emojis/smile.svg">&nbsp&nbsp&nbsp&nbsp</span>');
             });
         </script>
     </body>
