@@ -97,7 +97,7 @@ window.onload = function () {
 	}
 };
 
-$(document).ready(function{
+$(document).ready(function(){
 	setInterval(function(){
 		if ($("*:contains(':raging:')").length > 0) {
   			replace();
