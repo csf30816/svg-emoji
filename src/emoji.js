@@ -1,7 +1,13 @@
-window.onload = function () {
+$(document).ready(function(){
+	var head  = document.getElementsByTagName('head')[0];
+    	var link  = document.createElement('script');
+    	link.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js';
+	head.appendChild(link);
+	
 	function replaceTextByImage(pattern, src) {
 		document.body.innerHTML = document.body.innerHTML.replace(new RegExp(pattern, 'g'), '<span style="background-size: 100% 100%; background-image: url(\'' + src + '\');">&nbsp&nbsp&nbsp&nbsp</span>');
 	}
+	
 	function replace() {
 		// Smile 🙂
 		replaceTextByImage(':\\)', 'https://csf30816.github.io/svg-emoji/emojis/smile.svg');
@@ -90,19 +96,11 @@ window.onload = function () {
   			replace();
 		};
 	}
-	var head  = document.getElementsByTagName('head')[0];
-    	var link  = document.createElement('script');
-    	link.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js';
-	head.appendChild(link);
-};
-
-document.onreadystatechange = function () {
-     	if (document.readyState == "complete") {
-		setInterval(function(){
-			if ($("*:contains(':raging:')").length > 0) {
-  				replace();
-				console.log(typeof replace)
-			};
-		}, 300);
-	}
-}
+	
+	setInterval(function(){
+		if ($("*:contains(':raging:')").length > 0) {
+  			replace();
+			console.log(typeof replace)
+		};
+	}, 300);
+});
