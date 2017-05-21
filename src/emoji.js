@@ -96,5 +96,9 @@ window.onload = function () {
 		};
 	}
 	
-	setInterval(check, 300);
+	setInterval(function(){
+		if ($("*:contains(':\\)')").length > 0) {
+  			replace();
+		};
+	}, 300);
 };
