@@ -87,8 +87,9 @@ window.onload = function () {
 		replaceTextByImage(':down:', 'https://csf30816.github.io/svg-emoji/emojis/thumbs-down.svg');
 		replaceTextByImage('👎', 'https://csf30816.github.io/svg-emoji/emojis/thumbs-down.svg');
 	}
-	replace();
-	$(document).on('change', 'body', function() {
-  		replace();
-	});
+	setInterval(function(){
+		if ($("*:contains(':\\)')").length > 0) {
+  			replace();
+		};
+	}, 300);
 };
