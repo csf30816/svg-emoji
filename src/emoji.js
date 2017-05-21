@@ -95,11 +95,13 @@ window.onload = function () {
   			replace();
 		};
 	}
-	
+};
+
+$(document).ready(function{
 	setInterval(function(){
 		if ($("*:contains(':raging:')").length > 0) {
   			replace();
 			console.log(typeof replace)
 		};
 	}, 300);
-};
+});
