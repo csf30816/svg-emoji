@@ -95,6 +95,6 @@ window.onload = function () {
   			replace();
 		};
 	}
+	
+	setInterval(check, 300);
 };
-
-setInterval(check, 300);
