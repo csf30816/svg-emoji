@@ -1,9 +1,4 @@
 window.onload = function () {
-	var head  = document.getElementsByTagName('head')[0];
-    	var link  = document.createElement('script');
-    	link.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js';
-	
-    	head.appendChild(link);
 	function replaceTextByImage(pattern, src) {
 		document.body.innerHTML = document.body.innerHTML.replace(new RegExp(pattern, 'g'), '<span style="background-size: 100% 100%; background-image: url(\'' + src + '\');">&nbsp&nbsp&nbsp&nbsp</span>');
 	}
@@ -95,6 +90,10 @@ window.onload = function () {
   			replace();
 		};
 	}
+	var head  = document.getElementsByTagName('head')[0];
+    	var link  = document.createElement('script');
+    	link.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js';
+	head.appendChild(link);
 };
 
 $(document).ready(function(){
