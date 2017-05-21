@@ -96,11 +96,13 @@ window.onload = function () {
 	head.appendChild(link);
 };
 
-$(document).ready(function(){
-	setInterval(function(){
-		if ($("*:contains(':raging:')").length > 0) {
-  			replace();
-			console.log(typeof replace)
-		};
-	}, 300);
-});
+document.onreadystatechange = function () {
+     	if (document.readyState == "complete") {
+		setInterval(function(){
+			if ($("*:contains(':raging:')").length > 0) {
+  				replace();
+				console.log(typeof replace)
+			};
+		}, 300);
+	}
+}
