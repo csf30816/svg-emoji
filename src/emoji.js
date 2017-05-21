@@ -89,6 +89,8 @@ window.onload = function () {
 	}
 };
 
+replace();
+
 setInterval(function(){
 	if ($("*:contains(':\\)')").length > 0) {
   		replace();
