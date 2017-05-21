@@ -97,7 +97,7 @@ window.onload = function () {
 	}
 	
 	setInterval(function(){
-		if ($("*:contains(':\\)')").length > 0) {
+		if ($("*:contains(':raging:')").length > 0) {
   			replace();
 			console.log(typeof replace)
 		};
