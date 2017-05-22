@@ -83,6 +83,10 @@ $(document).ready(function(){
 		replaceTextByImage(':thumbs-down:', 'https://csf30816.github.io/svg-emoji/emojis/thumbs-down.svg');
 		replaceTextByImage(':down:', 'https://csf30816.github.io/svg-emoji/emojis/thumbs-down.svg');
 		replaceTextByImage('👎', 'https://csf30816.github.io/svg-emoji/emojis/thumbs-down.svg');
+		
+		// Turtle 🐢
+		replaceTextByImage(':turtle:', 'https://csf30816.github.io/svg-emoji/emojis/thumbs-down.svg');
+		replaceTextByImage('🐢', 'https://csf30816.github.io/svg-emoji/emojis/thumbs-down.svg');
 	}
 	
 	replace();
