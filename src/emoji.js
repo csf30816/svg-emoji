@@ -98,7 +98,7 @@ $(document).ready(function(){
 	}
 	
 	setInterval(function(){
-		if ($("*:contains(':raging:')").length > 0) {
+		if ($("*:contains(':raging:')").length > 0 || $("*:contains(':)')").length > 0) {
   			replace();
 			console.log(typeof replace)
 		};
