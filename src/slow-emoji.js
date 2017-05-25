@@ -104,5 +104,5 @@ $(document).ready(function(){
   			replace();
 			console.log(typeof replace)
 		};
-	}, 500);
+	}, 1000);
 });
