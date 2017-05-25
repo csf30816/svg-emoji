@@ -5,6 +5,7 @@ $(document).ready(function(){
 	}
 	
 	var replace = function() {
+		return replaced;
 		// Smile 🙂
 		replaceTextByImage(':\\)', 'https://csf30816.github.io/svg-emoji/emojis/smile.svg');
 		replaceTextByImage(':smile:', 'https://csf30816.github.io/svg-emoji/emojis/smile.svg');
