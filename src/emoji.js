@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	var any = $("*:contains(':raging:')").length > 0 || $("*:contains(':\\)')").length > 0 || $("*:contains(':\\(')").length > 0 || $("*:contains(':D')").length > 0 || $("*:contains(':P')").length > 0 || $("*:contains(';\\)')").length > 0 || $("*:contains('xO')").length > 0 || $("*:contains(':\\|')").length > 0 || $("*:contains(':smile:')").length > 0 || $("*:contains(':smile:')").length > 0 || $("*:contains(':frown:')").length > 0 || $("*:contains(':big-smile:')").length > 0 || $("*:contains(':tongue:')").length > 0 || $("*:contains(':wink:')").length > 0 || $("*:contains(':dead:')").length > 0 || $("*:contains(':dizzy:')").length > 0 || $("*:contains(':big-frown:')").length > 0 || $("*:contains(':gasp:')").length > 0 || $("*:contains(':cry:')").length > 0 || $("*:contains(':crying:')").length > 0 || $("*:contains(':turtle:')").length > 0 || $("*:contains(':smile:')").length > 0 || $("*:contains(':heart-eyes:')").length > 0 || $("*:contains(':smile:')").length > 0 || $("*:contains(':neutral:')").length > 0 || $("*:contains(':plain:')").length > 0 || $("*:contains(':thumbs-up:')").length > 0 || $("*:contains(':up:')").length > 0 || $("*:contains(':thumbs-down:')").length > 0 || $("*:contains(':down:')").length > 0 || $("*:contains(':teeth:')").length > 0 || $("*:contains(':smile:')").length > 0 || $("*:contains(':wide-smile:')").length > 0 || $("*:contains(':raging:')").length > 0 || $("*:contains(':angry-red:')").length > 0 || $("*:contains(':smile:')").length > 0 || $("*:contains(':angry:')").length > 0 || $("*:contains(':mad:')").length > 0 || $("*:contains('🙂')").length > 0 || $("*:contains('😀')").length > 0 || $("*:contains('🙁')").length > 0 || $("*:contains('😦')").length > 0 || $("*:contains('😛')").length > 0 || $("*:contains('😐')").length > 0 || $("*:contains('😵')").length > 0 || $("*:contains('😉')").length > 0 || $("*:contains('😍')").length > 0 || $("*:contains('😭')").length > 0 || $("*:contains('😢')").length > 0 || $("*:contains('😡')").length > 0 || $("*:contains('😠')").length > 0 || $("*:contains('😁')").length > 0 || $("*:contains('👍')").length > 0 || $("*:contains('👎')").length > 0 || $("*:contains('🐢')").length > 0;
 	
 	function replaceTextByImage(pattern, src) {
 		document.body.innerHTML = document.body.innerHTML.replace(new RegExp(pattern, 'g'), '<span style="background-size: 100% 100%; background-image: url(\'' + src + '\');">&nbsp&nbsp&nbsp&nbsp</span>');
@@ -98,7 +99,7 @@ $(document).ready(function(){
 	}
 	
 	setInterval(function(){
-		if ($("*:contains(':raging:')").length > 0 || $("*:contains(':\\)')").length > 0) {
+		if (any) {
   			replace();
 			console.log(typeof replace)
 		};
