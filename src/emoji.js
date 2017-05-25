@@ -101,5 +101,41 @@ $(document).ready(function(){
   			replace();
 			console.log(typeof replace)
 		}
+		if ($("body:contains(':\\|')").length > 0) {
+  			replace();
+			console.log(typeof replace)
+		}
+		if ($("body:contains(':\\(')").length > 0) {
+  			replace();
+			console.log(typeof replace)
+		}
+		if ($("body:contains(':D')").length > 0) {
+  			replace();
+			console.log(typeof replace)
+		}
+		if ($("body:contains(':P')").length > 0) {
+  			replace();
+			console.log(typeof replace)
+		}
+		if ($("body:contains('D:')").length > 0) {
+  			replace();
+			console.log(typeof replace)
+		}
+		if ($("body:contains(':O')").length > 0) {
+  			replace();
+			console.log(typeof replace)
+		}
+		if ($("body:contains('xO')").length > 0) {
+  			replace();
+			console.log(typeof replace)
+		}
+		if ($("body:contains(':D')").length > 0) {
+  			replace();
+			console.log(typeof replace)
+		}
+		if ($("body:contains(';\\)')").length > 0) {
+  			replace();
+			console.log(typeof replace)
+		}
 	}, 300);
 });
