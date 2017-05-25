@@ -97,9 +97,9 @@ $(document).ready(function(){
 	}
 	
 	setInterval(function(){
-		if (any) {
+		if ($("body:contains(':\\)')").length > 0) {
   			replace();
 			console.log(typeof replace)
-		};
+		}
 	}, 300);
 });
