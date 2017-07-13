@@ -1,11 +1,13 @@
 $(document).ready(function(){
 	function replaceTextByImage(pattern, src) {
-		document.body.innerHTML = document.body.innerHTML.replace(new RegExp(pattern, 'g'), '<span style="background-size: 100% 100%; background-image: url(\'' + src + '\');">&nbsp&nbsp&nbsp&nbsp</span>');
+		var newDOM = String(document.body.innerHTML);
+		newDom = newDOM.replace(pattern, '<span style="background-size: 100% 100%; background-image: url(\'' + src + '\');">&nbsp&nbsp&nbsp&nbsp</span>'); //etc.
+		document.body.innerHTML = newDOM;
 	}
 	
 	function replace() {
 		// Smile 🙂
-		replaceTextByImage(':\\)', 'https://csf30816.github.io/svg-emoji/emojis/smile.svg');
+		replaceTextByImage(':)', 'https://csf30816.github.io/svg-emoji/emojis/smile.svg');
 		replaceTextByImage(':smile:', 'https://csf30816.github.io/svg-emoji/emojis/smile.svg');
 		replaceTextByImage('🙂', 'https://csf30816.github.io/svg-emoji/emojis/smile.svg');
 
@@ -20,13 +22,13 @@ $(document).ready(function(){
 		replaceTextByImage('😀', 'https://csf30816.github.io/svg-emoji/emojis/big-smile.svg');
 
 		// Frown ☹ 🙁
-		replaceTextByImage(':\\(', 'https://csf30816.github.io/svg-emoji/emojis/frown.svg');
+		replaceTextByImage(':(', 'https://csf30816.github.io/svg-emoji/emojis/frown.svg');
 		replaceTextByImage(':frown:', 'https://csf30816.github.io/svg-emoji/emojis/frown.svg');
 		replaceTextByImage('☹', 'https://csf30816.github.io/svg-emoji/emojis/frown.svg');
 		replaceTextByImage('🙁', 'https://csf30816.github.io/svg-emoji/emojis/frown.svg');
 
 		// Wink 😉
-		replaceTextByImage(';\\)', 'https://csf30816.github.io/svg-emoji/emojis/wink.svg');
+		replaceTextByImage(';)', 'https://csf30816.github.io/svg-emoji/emojis/wink.svg');
 		replaceTextByImage(':wink:', 'https://csf30816.github.io/svg-emoji/emojis/wink.svg');
 		replaceTextByImage('😉', 'https://csf30816.github.io/svg-emoji/emojis/wink.svg');
 
@@ -54,7 +56,7 @@ $(document).ready(function(){
 
 		// Neutral 😐
 		replaceTextByImage(':neutral:', 'https://csf30816.github.io/svg-emoji/emojis/neutral.svg');
-		replaceTextByImage(':\\|', 'https://csf30816.github.io/svg-emoji/emojis/neutral.svg');
+		replaceTextByImage(':|', 'https://csf30816.github.io/svg-emoji/emojis/neutral.svg');
 		replaceTextByImage(':plain:', 'https://csf30816.github.io/svg-emoji/emojis/neutral.svg');
 		replaceTextByImage('😐', 'https://csf30816.github.io/svg-emoji/emojis/neutral.svg');
 
@@ -90,52 +92,7 @@ $(document).ready(function(){
 	
 	replace();
 	
-	function check() {
-		if ($("body:contains(':\\)')").length > 0) {
-  			replace();
-		};
-	}
-	
 	setInterval(function(){
-		if ($("body:contains(':\\)')").length > 0) {
-  			replace();
-			console.log(typeof replace)
-		}
-		if ($("body:contains(':\\|')").length > 0) {
-  			replace();
-			console.log(typeof replace)
-		}
-		if ($("body:contains(':\\(')").length > 0) {
-  			replace();
-			console.log(typeof replace)
-		}
-		if ($("body:contains(':D')").length > 0) {
-  			replace();
-			console.log(typeof replace)
-		}
-		if ($("body:contains(':P')").length > 0) {
-  			replace();
-			console.log(typeof replace)
-		}
-		if ($("body:contains('D:')").length > 0) {
-  			replace();
-			console.log(typeof replace)
-		}
-		if ($("body:contains(':O')").length > 0) {
-  			replace();
-			console.log(typeof replace)
-		}
-		if ($("body:contains('xO')").length > 0) {
-  			replace();
-			console.log(typeof replace)
-		}
-		if ($("body:contains(':D')").length > 0) {
-  			replace();
-			console.log(typeof replace)
-		}
-		if ($("body:contains(';\\)')").length > 0) {
-  			replace();
-			console.log(typeof replace)
-		}
-	}, 300);
+		replace();
+	}, 100);
 });
