@@ -1,8 +1,6 @@
 $(document).ready(function(){
 	function replaceTextByImage(pattern, src) {
-		var newDOM = String(document.body.innerHTML);
-		newDom = newDOM.replace(pattern, '<span style="background-size: 100% 100%; background-image: url(\'' + src + '\');">&nbsp&nbsp&nbsp&nbsp</span>'); //etc.
-		document.body.innerHTML = newDOM;
+		document.body.innerHTML = document.body.innerHTML.replace(pattern, '<span style="background-size: 100% 100%; background-image: url(\'' + src + '\');">&nbsp&nbsp&nbsp&nbsp</span>');
 	}
 	
 	function replace() {
