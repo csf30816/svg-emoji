@@ -94,5 +94,5 @@ $(document).ready(function(){
 	
 	setInterval(function(){
 		replace();
-	}, 100);
+	}, 5000);
 });
